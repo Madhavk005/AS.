@@ -1026,6 +1026,7 @@ preloader
 
 ------------------------------------------- */
 .mil-preloader {
+  display: none !important;
   position: fixed;
   z-index: 9;
   top: 0;
@@ -1091,6 +1092,7 @@ cursor
 
 ------------------------------------------- */
 .mil-ball {
+  display: none !important;
   width: 20px;
   height: 20px;
   position: fixed;
@@ -1163,6 +1165,7 @@ scrollbar
 }
 
 .mil-progress-track {
+  display: none !important;
   position: fixed;
   z-index: 10;
   top: 0;
