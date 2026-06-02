@@ -20,7 +20,7 @@ export function FeaturedWork({ limit }: { limit?: number }) {
             viewport={{ once: true }}
             className="text-[10vw] md:text-8xl font-heading tracking-tighter leading-none"
           >
-            Selected <br /> <span className="italic font-light text-accent ml-[10vw]">Work</span>
+            {limit ? "Selected" : "All"} <br /> <span className="italic font-light text-accent ml-[10vw]">Work</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 30 }}
@@ -86,8 +86,6 @@ function ProjectList({ projects }: { projects: Project[] }) {
         <motion.a
           key={project.id}
           href={project.link || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
           onMouseEnter={() => setActiveProject(index)}
           onMouseLeave={() => setActiveProject(null)}
           initial={{ opacity: 0, y: 20 }}
