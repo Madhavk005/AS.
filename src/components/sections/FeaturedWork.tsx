@@ -113,8 +113,8 @@ function ProjectList({ projects }: { projects: Project[] }) {
             </div>
           </div>
           
-          {/* Mobile Image (Visible directly inline) */}
-          <div className="md:hidden w-full aspect-[4/3] relative mt-8 rounded-lg overflow-hidden">
+          {/* Mobile/Tablet Image (Visible directly inline) */}
+          <div className="lg:hidden w-full aspect-[4/3] relative mt-8 rounded-lg overflow-hidden">
             <Image
               src={project.image}
               alt={project.title}
@@ -129,7 +129,7 @@ function ProjectList({ projects }: { projects: Project[] }) {
 
       {/* Floating Mouse Image Reveal (Desktop Only) */}
       <motion.div
-        className="hidden md:block fixed top-0 left-0 w-[400px] aspect-[4/3] pointer-events-none z-50 overflow-hidden rounded-xl shadow-2xl"
+        className="hidden lg:block fixed top-0 left-0 w-[400px] aspect-[4/3] pointer-events-none z-50 overflow-hidden rounded-xl shadow-2xl"
         style={{
           x: smoothX,
           y: smoothY,
